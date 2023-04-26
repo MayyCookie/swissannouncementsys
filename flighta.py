@@ -13,7 +13,7 @@ class HostPlugin(commands.Cog):
         departure_time = await self.bot.wait_for('message', check=lambda m: m.author == ctx.author)
         await ctx.send("Thank you! Announcing in the channel...")
         announcement = f"Flight at {flight_time.content} departing at {departure_time.content}."
-        channel = self.bot.get_channel(YOUR_CHANNEL_ID_HERE)
+        channel = self.bot.get_channel(991475748756009014)
         await channel.send(announcement)
         
 def setup(bot):
